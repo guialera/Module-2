@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="travel.css">
+    <title>Document</title>
+</head>
+
+<h1>Fun Times Travel Agency!</h1>
+
+<body>
+    <form name="travelForm">
+        <label>
+            Please enter your first name, last name, and age:
+            <input type="text" name="firstName" placeholder="First Name" />
+            <input type="text" name="lastName" placeholder="Last Name" />
+            <input type="number" name="age" placeholder="Age" />
+        </label>
+        
+        <label>
+            Please select your gender:
+            Male: <input type="radio" name="gender" value="Male" />
+            Female: <input type="radio" name="gender" value="Female" />
+        </label>
+        
+        <label>
+            Please select your travel destination:
+            <select name="destination">
+                <option value="Las Vegas">Las Vegas</option>
+                <option value="Reykjavik">Reykjavik</option>
+                <option value="New York">New York</option>
+            </select>
+        </label>
+        
+        <label>
+            Do you have any dietary restrictions?
+            Vegetarian: <input type="checkbox" value="Vegetarian" name="restrictions" />
+            Vegan: <input type="checkbox" value="Vegan" name="restrictions" />
+            Keto: <input type="checkbox" value="Keto" name="restrictions" />
+        </label>
+        
+        <button id="submitBtn">Submit</button>
+
+    </form>
+    <script src="travelForm.js"></script>
+</body>
+
+</html>
