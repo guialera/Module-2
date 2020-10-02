@@ -24,8 +24,9 @@ submitPricing.addEventListener("click", function (event) {
     price = goombaPrice + bobombsPrice + cheepcheepsPrice
 
     const finalPrice = document.createElement("p")
-    finalPrice.textContent = "Your total is " + "$" + price
+    finalPrice.textContent = "Your total is " + price + " coins!"
     finalPrice.style.fontSize = "50px"
+    finalPrice.style.textAlign = "center"
     document.getElementById("form").append(finalPrice)
 
     clearPricing.addEventListener("click", function (event) {
