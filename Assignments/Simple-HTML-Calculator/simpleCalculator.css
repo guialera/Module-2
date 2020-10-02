@@ -1,0 +1,45 @@
+body{
+    background-color: gray;
+}
+
+#addition{
+    font-size: 40px;
+}
+
+#subtraction{
+    font-size: 40px;
+}
+
+#multiplication{
+    font-size: 40px;
+}
+
+#plusSign{
+    font-size: 30px;
+    margin-left: 80px;
+}
+
+#minusSign{
+    font-size: 30px;
+    margin-left: 80px;
+}
+
+#multiplySign{
+    font-size: 30px;
+    margin-left: 80px;
+}
+
+#add{
+    background-color: lightcoral;
+    margin: 100px 100px 100px 100px;
+}
+
+#sub{
+    background-color: lightskyblue;
+    margin: 100px 100px 100px 600px;
+}
+
+#mul{
+    background-color: darkseagreen;
+    margin: 100px 100px 100px 1125px;
+}
