@@ -61,3 +61,40 @@ const editedPeopleArr = sortedArr.map(function (people) {
 })
 
 console.log(editedPeopleArr)
+
+//Extra Credit 
+
+var newPeopleArr = [{
+    firstName: "BoJack",
+    lastName: "Horseman",
+    age: 40
+},
+{
+    firstName: "Miss",
+    lastName: "Moneypenney",
+    age: 45
+}]
+
+const additionalPeopleArr = peopleArray.concat(newPeopleArr)
+
+console.log(additionalPeopleArr)
+
+const lastNameLetters = additionalPeopleArr.filter(function (lastLetter) {
+    if (lastLetter.lastName.slice(-1) === "y" || lastLetter.lastName.slice(-1) === "a") {
+        return false
+    } else return true
+})
+
+console.log(lastNameLetters)
+
+const secondRemoved = lastNameLetters.filter(function (people) {
+    if (lastNameLetters.indexOf(people) === 1) {
+        return false
+    } else return true
+})
+
+console.log(secondRemoved)
+
+const reversedArr = secondRemoved.reverse()
+
+console.log(reversedArr)
