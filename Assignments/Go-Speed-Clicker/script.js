@@ -40,7 +40,7 @@ document.getElementById("header").append(backUpClicks)
 
 console.log(storedTotalClicks)
 
-let refreshNumber = Number(storedTotalClicks)
+let refreshNumber = Number(storedTotalClicks) + 1
 
 const clearBtn = document.getElementById("clearClicks")
 
