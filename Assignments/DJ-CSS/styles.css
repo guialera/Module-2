@@ -1,0 +1,116 @@
+body{
+    background-color: lightgray;
+}
+
+#boxContainer{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    column-gap: 20px;
+    row-gap: 40px;
+}
+
+.boxOne{
+    width: 200px;
+    height: 200px;
+    background-color: olive;
+    border-style: solid;
+    border-color: black;
+    grid-column: 1/3;
+    grid-row: 1/7;
+    transition: all 1s linear 1s;
+}
+
+.boxOne:hover{
+    background-color: lightgreen;
+    border-radius: 50%;
+    height: 350px;
+    width: 400px;
+}
+
+.boxTwo{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    border-style: solid;
+    border-color: black;
+    grid-column: 6/8;
+    grid-row: 1/7;
+    transition: background-color 5s ease-in-out 500ms, border-style 2s ease-in-out 10s;
+}
+
+.boxTwo:hover{
+    background-color: lightseagreen;
+    border-style: dotted;
+}
+
+.boxThree{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    border-style: solid;
+    border-color: black;
+    grid-column: 11/13;
+    grid-row: 1/7;
+    transition: height 1s, width 10s;
+}
+
+.boxThree:hover{
+    height: 400px;
+    width: 400px;
+}
+
+.boxFour{
+    width: 200px;
+    height: 200px;
+    background-color: violet;
+    border-style: solid;
+    border-color: black;
+    grid-column: 1/3;
+    grid-row: 7/13;
+    transition: background-color 10s, border-color 1s, border-radius 5s ease-in;
+}
+
+.boxFour:hover{
+    background-color: burlywood;
+    border-color: yellow;
+    border-radius: 20%;
+}
+
+.boxFive{
+    width: 200px;
+    height: 200px;
+    background-color:orange;
+    border-style: solid;
+    border-color: black;
+    grid-column: 6/8;
+    grid-row: 7/13;
+    transition: 2s ease-in 1s;
+}
+
+.boxFive:hover{
+    color: pink;
+    background-color: chocolate;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.boxSix{
+    width: 200px;
+    height: 200px;
+    color: yellowgreen;
+    text-align: center;
+    background-color: yellowgreen;
+    border-style: solid;
+    border-color: black;
+    grid-column: 11/13;
+    grid-row: 7/13;
+    transition: all 3s linear 1s;
+}
+
+.boxSix:hover{
+    background-color: maroon;
+    font-size: 50px;
+    font-weight: bold;
+}
