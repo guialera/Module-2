@@ -134,10 +134,20 @@ body{
     font-size: 25px;
 }
 
+hr{
+    height: 1px;
+    background-color: #325050;
+    border: none;
+}
+
 #divSix{
     background-image: url("http://www.csszengarden.com/214/gridlines-opaque.png"), url("http://www.csszengarden.com/214/contours.png");
     background-repeat: repeat, repeat;
     background-color: #a0b9ad;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 15px;
+    color: #325050;
+    padding: 100px 200px 100px 100px;
     opacity: 0.5;
     grid-column: 9/13;
     /*grid-row: 3/4;*/
@@ -163,10 +173,6 @@ body{
 #divEight{
     /*background-color: #d9e3dc;*/
     background-color: #e5ede8;
-    font-family: 'Julius Sans One', sans-serif;
-    font-size: 15px;
-    color: #325050;
-    padding: 100px 200px 100px 100px;
     grid-column: 9/13;
     /*grid-row: 4/5;*/ 
 }
