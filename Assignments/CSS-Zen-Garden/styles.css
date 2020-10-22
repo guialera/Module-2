@@ -110,8 +110,41 @@ body{
 #divFour{
     /*background-color: #d9e3dc;*/
     background-color: #e5ede8;
+    font-size: 15px;
+    padding: 100px 200px 100px 100px;
     grid-column: 9/13;
     /*grid-row: 2/3;*/
+}
+
+#textFour{
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 16px;
+    color: #325050;
+}
+
+#spacingFour{
+    line-height: 0.25;
+}
+
+#paddingFour{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: #C0CAC3;
+}
+
+#insideTextFour{
+    color: #C0CAC3;
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    font-size: 11px;
+}
+
+#otherInsideTextFour{
+    color: #616857;
+    font-family: 'Libre Baskerville', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
 }
 
 #divFive{
@@ -196,6 +229,10 @@ hr{
     color: white;
     opacity: 0.5;
     font-style: italic;
+}
+
+#otherTextNine{
+    font-style: normal;
 }
 
 #divTen{
