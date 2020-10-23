@@ -14,8 +14,10 @@
 <body>
     <div id="container">
         <div id="divOne">
+            <img id="imgOne" src="http://www.csszengarden.com/214/enso.svg">
             <p id="textOne">CSS Zen Garden</p>
-            <p id="textTwo">The Beauty of CSS Design</p><img id="imgOne" src="http://www.csszengarden.com/214/enso.svg">
+            <p id="textTwo">The Beauty of CSS Design</p>
+            <!--<img id="imgOne" src="http://www.csszengarden.com/214/enso.svg">-->
             <button id="buttonOne">View All Designs</button><button id="buttonTwo"></button>
         </div>
         <!--<div id="divTwo"><button id="buttonOne">View All Designs</button><button id="buttonTwo"></button></div>-->
@@ -48,44 +50,48 @@
                 contributed to the beauty of the web; we can always push it further.</p>
         </div>
         <div id="divFour">
-            <div id="spacingFour">
-                <p id="textFour">Mid Century Modern</p>
-                <p id="insideTextFour">by <span id="otherInsideTextFour">Andrew Lohman</span></p>
+            <div class="column">
+                <div id="spacingFour">
+                    <p id="textFour">Mid Century Modern</p>
+                    <p id="insideTextFour">by <span id="otherInsideTextFour">Andrew Lohman</span></p>
+                </div>
+                <hr id="paddingFour">
+                <div id="spacingFour">
+                    <p id="textFour">Garments</p>
+                    <p id="insideTextFour">by <span id="otherInsideTextFour">Dan Mall</span></p>
+                </div>
+                <hr id="paddingFour">
+                <div id="spacingFour">
+                    <p id="textFour">Steel</p>
+                    <p id="insideTextFour">by <span id="otherInsideTextFour">Steffen Knoeller</span></p>
+                </div>
+                <hr id="paddingFour">
+                <div id="spacingFour">
+                    <p id="textFour">Apothecary</p>
+                    <p id="insideTextFour">by <span id="otherInsideTextFour">Trent Walton</span></p>
+                </div>
+                <hr id="paddingFourAlt">
             </div>
-            <hr id="paddingFour">
-            <div id="spacingFour">
-                <p id="textFour">Garments</p>
-                <p id="insideTextFour">by <span id="otherInsideTextFour">Dan Mall</span></p>
-            </div>
-            <hr id="paddingFour">
-            <div id="spacingFour">
-                <p id="textFour">Steel</p>
-                <p id="insideTextFour">by <span id="otherInsideTextFour">Steffen Knoeller</span></p>
-            </div>
-            <hr id="paddingFour">
-            <div id="spacingFour">
-                <p id="textFour">Apothecary</p>
-                <p id="insideTextFour">by <span id="otherInsideTextFour">Trent Walton</span></p>
-            </div>
-            <hr id="paddingFour">
-            <div id="spacingFour">
-                <p id="textFour">Screen Filler</p>
-                <p id="insideTextFour">by <span id="otherInsideTextFour">Elliot Jay Stocks</span></p>
-            </div>
-            <hr id="paddingFour">
-            <div id="spacingFour">
-                <p id="textFour">Fountain Kiss</p>
-                <p id="insideTextFour">by <span id="otherInsideTextFour">Jeremy Carlson</span></p>
-            </div>
-            <hr id="paddingFour">
-            <div id="spacingFour">
-                <p id="textFour">A Robot Named Jimmy</p>
-                <p id="insideTextFour">by <span id="otherInsideTextFour">meltmedia</span></p>
-            </div>
-            <hr id="paddingFour">
-            <div id="spacingFour">
-                <p id="textFour">Verde Moderna</p>
-                <p id="insideTextFour">by <span id="otherInsideTextFour">Dave Shea</span></p>
+            <div class="column">
+                <div id="spacingFour">
+                    <p id="textFour">Screen Filler</p>
+                    <p id="insideTextFour">by <span id="otherInsideTextFour">Elliot Jay Stocks</span></p>
+                </div>
+                <hr id="paddingFour">
+                <div id="spacingFour">
+                    <p id="textFour">Fountain Kiss</p>
+                    <p id="insideTextFour">by <span id="otherInsideTextFour">Jeremy Carlson</span></p>
+                </div>
+                <hr id="paddingFour">
+                <div id="spacingFour">
+                    <p id="textFour">A Robot Named Jimmy</p>
+                    <p id="insideTextFour">by <span id="otherInsideTextFour">meltmedia</span></p>
+                </div>
+                <hr id="paddingFour">
+                <div id="spacingFour">
+                    <p id="textFour">Verde Moderna</p>
+                    <p id="insideTextFour">by <span id="otherInsideTextFour">Dave Shea</span></p>
+                </div>
             </div>
         </div>
         <div id="divFive">
@@ -112,17 +118,21 @@
                 forward to.</p>
         </div>
         <div id="divSix">
-            <hr>
-            <p>View This Design's CSS</p>
-            <hr>
-            <p>CSS Resources</p>
-            <hr>
-            <p>FAQ</p>
-            <hr>
-            <p>Submit A Design</p>
-            <hr>
-            <p>Translations</p>
-            <hr>
+            <div class="column">
+                <hr>
+                <p>View This Design's CSS</p>
+                <hr>
+                <p>CSS Resources</p>
+                <hr>
+                <p>FAQ</p>
+            </div>
+            <div class="column">
+                <hr>
+                <p>Submit A Design</p>
+                <hr>
+                <p>Translations</p>
+                <hr>
+            </div>
         </div>
         <div id="divSeven">
             <p id="headerSeven">Requirements</p>
