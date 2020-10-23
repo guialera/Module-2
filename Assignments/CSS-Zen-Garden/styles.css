@@ -266,26 +266,26 @@ hr{
     }
 
     #divOne{
-        display: block;
-        text-align: center;
+        /*display: block;*/
+        /*text-align: center;*/
         grid-column: 1/13;
         height: 250px;
         /*grid-row: 1/2;*/
     }
 
     #imgOne{
-        display: block;
+        /*display: block;*/
         position: absolute;
         /*top: 0px;*/
         height: 100px;
         width: 100px;
         margin-left: 450px;
-        margin-right: 0;
+        margin-right: 0px;
         margin-top: 45px;
     }
     
     #textOne{
-        display: block;
+        /*display: block;*/
         margin-left: 600px;
         /*margin-right: auto;*/
         position: absolute;
@@ -297,7 +297,7 @@ hr{
     }
     
     #textTwo{
-        display: block;
+        /*display: block;*/
         margin-left: 600px;
         /*margin-right: auto;*/
         position: absolute;
@@ -313,7 +313,7 @@ hr{
         opacity: 0.2;
         font-family: 'Julius Sans One', sans-serif;
         font-size: 15px;
-        display: block;
+        /*display: block;*/
         height: 75px;
         width: 90%;
         right: 0px;
@@ -324,7 +324,7 @@ hr{
     
     #buttonTwo{
         opacity: 0.2;
-        display: block;
+        /*display: block;*/
         height: 75px;
         width: 10%;
         right: 0px;
@@ -412,7 +412,7 @@ hr{
     }
 
     #divOne{
-        display: block;
+        /*display: block;*/
         text-align: center;
         grid-column: 1/13;
         height: 250px;
@@ -455,7 +455,7 @@ hr{
         opacity: 0.2;
         font-family: 'Julius Sans One', sans-serif;
         font-size: 15px;
-        display: block;
+        /*display: block;*/
         height: 75px;
         width: 90%;
         right: 0px;
@@ -466,7 +466,7 @@ hr{
     
     #buttonTwo{
         opacity: 0.2;
-        display: block;
+        /*display: block;*/
         height: 75px;
         width: 10%;
         right: 0px;
@@ -565,7 +565,38 @@ hr{
     
 }
 
-@media(max-width: 500px){
+@media(max-width: 1199px){
+
+    #divThree{
+        padding: 20px 80px 20px 80px;
+    }
+
+    #divFour{
+        padding: 20px 80px 20px 80px;
+    }
+
+    #divFive{
+        padding: 20px 80px 20px 80px;
+    }
+
+    #divSix{
+        padding: 20px 80px 20px 80px;
+    }
+
+    #divSeven{
+        padding: 20px 80px 20px 80px;
+    }
+
+    #divNine{
+        padding: 20px 80px 20px 80px;
+    }
+
+    #divTen{
+        padding: 20px 80px 20px 80px;
+    }
+}
+
+@media(max-width: 600px){
 
     #container{
         /*display: block;*/
