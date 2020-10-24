@@ -251,16 +251,25 @@ hr{
 }
 
 #divTen{
+    display: flex;
+    justify-content: space-evenly;
     background-color: #134347;
     padding: 40px 40px 40px 40px;
     grid-column: 1/13;
     /*grid-row: 5/6;*/
 }
 
+i{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
 #icons{
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 75px;
+    /*display: flex;
+    justify-content: space-evenly;*/
+    font-size: 60px;
+    opacity: 0.5;
+    color: white;
 }
 
 @media(max-width: 1500px){
@@ -573,8 +582,13 @@ hr{
         grid-row: 6/7;
     }
 
+    i{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     #icons{
-        font-size: 60px;
+        font-size: 38px;
     }
     
 }
@@ -745,8 +759,37 @@ hr{
         /*grid-column: 1/13;*/
         /*grid-row: 8/9;*/
     }
+
+    i{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     
     #icons{
-        font-size: 50px;
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 350px){
+
+    #divFour{
+        padding: 0px 0px 0px 0px;
+    }
+
+    #paddingFourAlt{
+        background-color: #C0CAC3;
+    }
+
+    .column{
+        float: none;
+        width: 100%;
+    }
+
+    #divSix{
+        padding: 0px 0px 0px 0px;
+    }
+
+    #icons{
+        font-size: 20px;
     }
 }
