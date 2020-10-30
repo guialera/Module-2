@@ -217,7 +217,7 @@ const animals = [
     }
 ];
 
-let filterForDogs = (arr) => { return arr.filter(animal => { (animal.type === "dog") ? true : false}) }
+let filterForDogs = (arr) => { return arr.filter(animal => { return (animal.type === "dog") ? true : false }) }
 
 const filter = filterForDogs(animals)
 
