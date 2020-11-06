@@ -1,0 +1,132 @@
+{
+    "menu": [
+        {
+            "appetizers": [
+                {
+                    "item 1": {
+                        "item": "chicken fingers",
+                        "ingridients": [
+                            "chicken tenders",
+                            "panko breading",
+                            "choice of sauce",
+                            "mix of house spices"
+                        ],
+                        "description": "Freshly breaded chicken tender meat mixed with house spices and optional coating of sauce."
+                    },
+                    "item 2": {
+                        "item": "french fries",
+                        "ingridients": [
+                            "Idaho potatoes",
+                            "house spices",
+                            "choice of dipping sauce"
+                        ],
+                        "description": "Freshly sliced Idaho potatoes deep fried in peanut oil and tossed in house spices with a choice of dipping sacue."
+                    }
+                }
+            ],
+            "cold sandwiches": [
+                {
+                    "item 1": {
+                        "item": "turkey sandwich",
+                        "ingridients": [
+                            "shreaded turkey breast",
+                            "potato bun",
+                            "mayo",
+                            "lettuce",
+                            "onions"
+                        ],
+                        "description": "Freshly shreaded turkey breast served on a toasted potato bun with mayo, lettuce, and onions."
+                    },
+                    "item 2": {
+                        "item": "ham sandwich",
+                        "ingridients": [
+                            "Boar's Head ham",
+                            "potato bun",
+                            "mayo",
+                            "lettuce",
+                            "onions",
+                            "tomatoes"
+                        ],
+                        "description": "Sliced Boar's Head ham sandwich served on a potato bun, mayo, lettuce, onions, and tomatoes."
+                    }
+                }
+            ],
+            "hot sandwiches": [
+                {
+                    "item 1": {
+                        "item": "chicken sandwich",
+                        "ingridients": [
+                            "breaded chicken breast",
+                            "house spices",
+                            " grilled potato bun",
+                            "mayo",
+                            "lettuce",
+                            "onions"
+                        ],
+                        "description": "Freshly breaded chicken breast coated with house spices and deep fried in peanut oil and served on a toasted potato bun with mayo, lettuce, and onions."
+                    },
+                    "item 2": {
+                        "item": "meatball sub",
+                        "ingridients": [
+                            "meatballs",
+                            "french bread",
+                            "choice of shreaded cheese",
+                            "house spcies"
+                        ],
+                        "description": "Freshly made meatballs served on a french bread with choice of shredded cheese and addition of house spices."
+                    }
+                }
+            ],
+            "desserts": [
+                {
+                    "item 1": {
+                        "item": "chocolate cream pie",
+                        "ingridients": [
+                            "pie crust",
+                            "chocolate cream filling",
+                            "whipped cream"
+                        ],
+                        "description": "Freshly baked chocolate cream pie served with whipped cream topping."
+                    },
+                    "item 2": {
+                        "item": "ice cream sundae",
+                        "ingridients": [
+                            "chocolate ice cream",
+                            "vanilla ice cream",
+                            "strawberry ice cream",
+                            "whipped cream",
+                            "chocoalte fudge",
+                            "bananas"
+                        ],
+                        "description": "In house made ice cream served with whipped cream, bananas, and chocolate fudge."
+                    }
+                }
+            ],
+            "drinks": [
+                {
+                    "item 1": {
+                        "item": "thai tea",
+                        "ingridients": [
+                            "black tea",
+                            "sweetened condensed milk"
+                        ],
+                        "description": "Brewed iced black tea mixed with sweetened condensed milk."
+                    },
+                    "item 2": {
+                        "item": "soft drinks",
+                        "ingridients": [
+                            "Coke",
+                            "Vanilla Coke",
+                            "Sprite",
+                            "Dr. Pepper",
+                            "Root Beer",
+                            "Diet Coke",
+                            "Diet Dr. Pepper"
+                        ],
+                        "description": "Choice of soft drink served with ice."
+                    }
+                }
+            ]
+        }
+    ]
+}
