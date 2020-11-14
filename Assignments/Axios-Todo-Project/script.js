@@ -3,9 +3,18 @@ function getTodo() {
     axios.get("https://api.vschool.io/alexramirez/todo/")
         .then(response => {
             for (let i = 0; i < response.data.length; i++) {
-                const h1 = document.createElement("h1")
-                h1.textContent = response.data[i].title
+                const h1 = document.createElement("p")
+                h1.textContent = [
+                    `Item: ${response.data[i].title}`, ` Price: $${response.data[i].price}` , ` Description: ${response.data[i].description}`
+                ]
+                h1.style.fontSize = "25px"
                 document.getElementById("todoItems").appendChild(h1)
+
+                const image = document.createElement("img")
+                image.src = response.data[i].imgUrl
+                h1.appendChild(image)
+                image.style.width = "100px"
+                image.style.marginLeft = "20px"
 
                 const id = response.data[i]._id
                 console.log(id)
@@ -15,10 +24,28 @@ function getTodo() {
                 //document.body.appendChild(id)
 
                 const check = document.createElement("input")
-                check.setAttribute("type", "checkbox")
+                check.setAttribute("type", "radio")
+                check.setAttribute("name", `choiceButton${response.data[i].title}`)
                 check.value = id
                 console.log(check.value)
                 h1.appendChild(check)
+                check.style.marginLeft = "20px"
+
+                const completedLabel = document.createElement("label")
+                completedLabel.textContent = "Complete"
+                h1.appendChild(completedLabel)
+
+                const notCompletedCheck = document.createElement("input")
+                notCompletedCheck.setAttribute("type", "radio")
+                notCompletedCheck.setAttribute("name", `choiceButton${response.data[i].title}`)
+                notCompletedCheck.value = id
+                console.log(notCompletedCheck)
+                h1.appendChild(notCompletedCheck)
+                notCompletedCheck.style.marginLeft = "15px"
+
+                const notCompletedLabel = document.createElement("label")
+                notCompletedLabel.textContent = "Incomplete"
+                h1.appendChild(notCompletedLabel)
 
                 const deleteBtn = document.createElement("button")
                 deleteBtn.textContent = "Delete"
@@ -32,7 +59,8 @@ function getTodo() {
                 console.log(editBtn.value)
                 h1.appendChild(editBtn)
 
-                deleteBtn.style.margin = "5px"
+                deleteBtn.style.marginLeft = "15px"
+                deleteBtn.style.marginRight = "5px"
 
                 deleteBtn.addEventListener("click", function (event) {
                     //event.preventDefault()
@@ -42,23 +70,36 @@ function getTodo() {
                         .catch(error => console.log(error))
                 })
 
-                check.addEventListener("change", function(){
+                check.addEventListener("change", function () {
                     const yesCompleted = {
                         completed: true
                     }
 
+                    /*const noCompleted = {
+                        completed: false
+                    }*/
+
+                    if (this.checked) {
+                        console.log("Complete Checked")
+                        axios.put(`https://api.vschool.io/alexramirez/todo/${check.value}`, yesCompleted)
+                            .then(response => console.log(response), alert("This has been completed"))
+                            .catch(error => console.log(error))
+                    } /*else {
+                        console.log("not checked")
+                        axios.put(`https://api.vschool.io/alexramirez/todo/${check.value}`, noCompleted)
+                            .then(response => console.log(response), alert("This has not been completed"))
+                            .catch(error => console.log(error))
+                    }*/
+                })
+
+                notCompletedCheck.addEventListener("change", function(){
                     const noCompleted = {
                         completed: false
                     }
 
                     if (this.checked){
-                        console.log("checked")
-                        axios.put(`https://api.vschool.io/alexramirez/todo/${check.value}`, yesCompleted)
-                        .then(response => console.log(response), alert("This has been completed"))
-                        .catch(error => console.log(error))
-                    } else{
-                        console.log("not checked")
-                        axios.put(`https://api.vschool.io/alexramirez/todo/${check.value}`, noCompleted)
+                        console.log("Incomplete Checked")
+                        axios.put(`https://api.vschool.io/alexramirez/todo/${notCompletedCheck.value}`, noCompleted)
                         .then(response => console.log(response), alert("This has not been completed"))
                         .catch(error => console.log(error))
                     }
@@ -89,7 +130,8 @@ todoItems.addEventListener("submit", function (event) {
     const items = {
         title: todoItems.title.value,
         description: todoItems.description.value,
-        price: todoItems.price.value
+        price: todoItems.price.value,
+        imgUrl: todoItems.imgUrl.value
     }
 
     axios.post("https://api.vschool.io/alexramirez/todo/", items)
