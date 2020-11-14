@@ -1,0 +1,24 @@
+body{
+    background-color: turquoise;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+form{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#todoItems{
+    text-align: center;
+    background-color: violet;
+    border-style: solid;
+    margin-left: 400px;
+    margin-right: 400px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}

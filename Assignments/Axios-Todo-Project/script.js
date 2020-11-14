@@ -5,7 +5,7 @@ function getTodo() {
             for (let i = 0; i < response.data.length; i++) {
                 const h1 = document.createElement("p")
                 h1.textContent = [
-                    `Item: ${response.data[i].title}`, ` Price: $${response.data[i].price}` , ` Description: ${response.data[i].description}`
+                    `Item: ${response.data[i].title}`, ` Price: $${response.data[i].price}`, ` Description: ${response.data[i].description}`
                 ]
                 h1.style.fontSize = "25px"
                 document.getElementById("todoItems").appendChild(h1)
@@ -92,16 +92,16 @@ function getTodo() {
                     }*/
                 })
 
-                notCompletedCheck.addEventListener("change", function(){
+                notCompletedCheck.addEventListener("change", function () {
                     const noCompleted = {
                         completed: false
                     }
 
-                    if (this.checked){
+                    if (this.checked) {
                         console.log("Incomplete Checked")
                         axios.put(`https://api.vschool.io/alexramirez/todo/${notCompletedCheck.value}`, noCompleted)
-                        .then(response => console.log(response), alert("This has not been completed"))
-                        .catch(error => console.log(error))
+                            .then(response => console.log(response), alert("This has not been completed"))
+                            .catch(error => console.log(error))
                     }
                 })
 
@@ -152,3 +152,16 @@ function clearItems() {
         list.removeChild(list.firstChild)
     }
 }
+
+function strikeCheck() {
+    console.log("this function works!")
+    const list = document.getElementById("todoItems")
+    const itemList = list.children
+    console.log(itemList)
+    for (let i = 0; i < itemList.length; i++) {
+        console.log("this works")
+        console.log(itemList[i])
+    }
+}
+
+strikeCheck()
