@@ -112,6 +112,7 @@ function getTodo() {
                     .then(response => console.log(response))
                     .catch(error => console.log(error))
                 })*/
+                /*strikeCheck()*/
             }
         })
         .catch(error => console.log(error))
@@ -135,7 +136,7 @@ todoItems.addEventListener("submit", function (event) {
     }
 
     axios.post("https://api.vschool.io/alexramirez/todo/", items)
-        .then(response => getTodo(response.data))
+        .then(response => getTodo(response.data), clearForm())
         .catch(error => console.log(error))
 })
 
@@ -153,7 +154,7 @@ function clearItems() {
     }
 }
 
-function strikeCheck() {
+/*function strikeCheck() {
     console.log("this function works!")
     const list = document.getElementById("todoItems")
     const itemList = list.children
@@ -164,4 +165,29 @@ function strikeCheck() {
     }
 }
 
-strikeCheck()
+strikeCheck()*/
+
+function clearForm() {
+    todoItems.title.value = ""
+    todoItems.description.value = ""
+    todoItems.price.value = ""
+    todoItems.imgUrl.value = ""
+}
+
+/*function strikeCheck(){
+    axios.get("https://api.vschool.io/alexramirez/todo/")
+    .then(response => {
+        for(let i = 0; i < response.data.length; i++){
+            if(response.data[i].completed === true){
+                console.log("True!")
+            } else if (response.data[i].completed === false){
+                console.log("False!")
+            }
+        }
+    })
+    .catch(error => console.log(error))
+}*/
+
+function strikeAdded(){
+
+}
