@@ -93,6 +93,8 @@ function getTodo() {
                     }*/
                     })
 
+                    notCompletedCheck.checked = true
+
                     notCompletedCheck.addEventListener("change", function () {
                         const noCompleted = {
                             completed: false
@@ -183,6 +185,8 @@ function getTodo() {
                             .catch(error => console.log(error))
                     })
 
+                    check.checked = true
+
                     check.addEventListener("change", function () {
                         const yesCompleted = {
                             completed: true
@@ -259,6 +263,8 @@ function clearItems() {
     }
 }
 
+//Following code/function was tested as a possible method in creating a striked text, function was not used 
+
 /*function strikeCheck() {
     console.log("this function works!")
     const list = document.getElementById("todoItems")
@@ -279,6 +285,8 @@ function clearForm() {
     todoItems.imgUrl.value = ""
 }
 
+//Following code was used to test API request and true/false statements
+
 /*function strikeCheck(){
     axios.get("https://api.vschool.io/alexramirez/todo/")
     .then(response => {
@@ -292,6 +300,8 @@ function clearForm() {
     })
     .catch(error => console.log(error))
 }*/
+
+//Following code was used beginning on line 120 and was edited below prior to implementing it on line 120 
 
 /*function strikeAdded(){
     const h2 = document.createElement("p")
